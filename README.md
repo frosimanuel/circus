@@ -1,29 +1,14 @@
-# 🎪 The Circus - React Application
+# 🎪 The Circus - Clown Finance Application Hub
 
-A professionally crafted, circus-themed React application featuring vintage aesthetics, modern animations, and impeccable user experience.
+We created the circus with just one app for starters, which is the no-loose-raffle, a mad kind of pool where every user stakes an amount of tickets, which will be staked for a pre-defined amount of time and afterwards, one of the participants will be randomly selected using VRF (A Verifiable Random Function).
 
-## Architecture Highlights
+That lucky one will get all the **fees* from the pool, and all the ~~losers~~ other participants will be able to claim back his initial stake minus a small fee.
 
-**This isn't your typical React boilerplate.** Every line of code has been meticulously architected following senior-level best practices:
+## And why it's a hub?
 
-- ⚡ **Vite** - Lightning-fast HMR and optimized builds
-- 🎯 **TypeScript** - Strict type safety throughout
-- 🎨 **Custom Design System** - Circus-themed color palette and typography
-- 🎭 **Professional Component Architecture** - Modular, reusable, maintainable
-- ✨ **Advanced CSS Animations** - 60fps performant animations
-- 📱 **Fully Responsive** - Mobile-first design approach
-- ♿ **Accessibility Compliant** - Proper ARIA labels and reduced-motion support
+This is built as an open framework where we will be adding new games but it has an open SDK where games can be added after a verification process, to build this circus up and create a complete kermesse in the process.
 
-## Tech Stack
-
-```
-React 18.2         - Latest React with concurrent features
-TypeScript 5.2     - Strict mode enabled
-Vite 5.0           - Next-gen frontend tooling
-CSS3               - Modern CSS with animations
-```
-
-## Project Structure
+## Architecture 
 
 ```
 circus-front/
@@ -46,30 +31,6 @@ circus-front/
 ├── tsconfig.json           # TypeScript strict configuration
 └── package.json
 ```
-
-## Features
-
-### 🎯 Main Menu
-- **START THE SHOW** - Launch into the main experience
-- **INFORMATION** - View application details
-
-### 🎨 Visual Excellence
-- Animated tent stripes background
-- Floating star particles with randomized animations
-- Dramatic curtain effects
-- Dynamic spotlight animations
-- Gradient text effects with glow
-- Hover states with transform animations
-- Professional button interactions
-
-### 📐 Design System
-Custom circus theme with:
-- **Primary Colors**: Vibrant circus red, luxurious gold, vintage cream
-- **Accents**: Carnival teal, magic purple, warm orange
-- **Typography**: Sigmar One, Righteous, Abril Fatface (Google Fonts)
-- **Spacing System**: Consistent 8px grid
-- **Shadow System**: Layered depth effects
-- **Custom Gradients**: Sunset, magic, gold variations
 
 ## Getting Started
 
@@ -150,8 +111,4 @@ Strict mode enabled with:
 
 ---
 
-**Built with precision. Designed with passion. Engineered to perfection.**
-# circus
-# cirfus-f
-# cirfus-f
-# circus
+**Built with anxiety. Designed with madness. Engineered to perfection.**
