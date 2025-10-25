@@ -1,0 +1,1 @@
+- always read the whole lib.rs when making changes in the contract solana

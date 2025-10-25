@@ -1,0 +1,28 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circus Tent Icon - Professional SVG -->
+  <defs>
+    <linearGradient id="tentGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E63946;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A02530;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFB700;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Tent Base -->
+  <path d="M8 56 L32 12 L56 56 Z" fill="url(#tentGradient)" stroke="#FFB700" stroke-width="2"/>
+
+  <!-- Tent Stripes -->
+  <path d="M32 12 L32 56" stroke="#FFF8E7" stroke-width="3" opacity="0.6"/>
+  <path d="M20 34 L44 34" stroke="#FFF8E7" stroke-width="2" opacity="0.4"/>
+  <path d="M14 45 L50 45" stroke="#FFF8E7" stroke-width="2" opacity="0.4"/>
+
+  <!-- Flag -->
+  <circle cx="32" cy="10" r="3" fill="url(#goldGradient)"/>
+  <path d="M32 10 L32 4 L38 7 L32 10" fill="#FFB700"/>
+
+  <!-- Entrance -->
+  <path d="M28 56 L32 40 L36 56" fill="#1D3557" stroke="#FFB700" stroke-width="1.5"/>
+</svg>

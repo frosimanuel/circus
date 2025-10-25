@@ -1,0 +1,281 @@
+.how-to-play {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Circus tent background - pixel style */
+.circus-tent-bg {
+  display: none;
+}
+
+/* Remove spotlights */
+.spotlight {
+  display: none;
+}
+
+/* Pixel confetti */
+.confetti-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.confetti {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  image-rendering: pixelated;
+  animation: confetti-fall linear infinite;
+}
+
+.confetti-0 {
+  background: #FF0000;
+  left: 10%;
+  animation-duration: 6s;
+  animation-delay: 0s;
+}
+
+.confetti-1 {
+  background: #FFD700;
+  left: 30%;
+  animation-duration: 8s;
+  animation-delay: 1s;
+}
+
+.confetti-2 {
+  background: #00FF00;
+  left: 50%;
+  animation-duration: 7s;
+  animation-delay: 0.5s;
+}
+
+.confetti-3 {
+  background: #00FFFF;
+  left: 70%;
+  animation-duration: 9s;
+  animation-delay: 1.5s;
+}
+
+.confetti-4 {
+  background: #FF00FF;
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 0.8s;
+}
+
+@keyframes confetti-fall {
+  0% {
+    top: -5%;
+    opacity: 1;
+  }
+  100% {
+    top: 105%;
+    opacity: 0.5;
+  }
+}
+
+/* Main container - clean terminal style */
+.how-to-play-container {
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+  width: 85%;
+  max-height: 85vh;
+  padding: 3rem;
+  background: #000000;
+  border: 4px solid #FFD700;
+  image-rendering: pixelated;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header - clean style */
+.how-to-play-header {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid #FFD700;
+}
+
+.retro-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.4rem;
+  color: #FFD700;
+  letter-spacing: 0.1em;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Scrollable content */
+.content-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem 1rem 1rem 0;
+  margin: 0;
+}
+
+.content-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.content-scroll::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.content-scroll::-webkit-scrollbar-thumb {
+  background: #FFD700;
+  border: 2px solid #000000;
+}
+
+/* Text blocks */
+.text-block {
+  margin: 2rem 0;
+}
+
+.text-line {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  line-height: 2;
+  margin: 0.8rem 0;
+  letter-spacing: 0.02em;
+}
+
+.text-line.small {
+  font-size: 0.7rem;
+  color: #CCCCCC;
+  line-height: 1.8;
+}
+
+.text-line.highlight-green {
+  color: #00FF00;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+}
+
+.text-line.highlight-red {
+  color: #FF0000;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+/* Divider */
+.divider {
+  height: 3px;
+  background: #333333;
+  margin: 2rem 0;
+}
+
+/* Controls - retro pixel style */
+.how-to-play-controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  flex-shrink: 0;
+}
+
+.retro-button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  padding: 1rem 2rem;
+  background: #FFD700;
+  color: #000000;
+  border: 4px solid #FFFFFF;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  box-shadow:
+    0 6px 0 #996600,
+    0 0 0 8px #000000;
+  transition: all 0.1s ease;
+  position: relative;
+  top: 0;
+  image-rendering: pixelated;
+}
+
+.retro-button:hover:not(.disabled) {
+  background: #FFED4E;
+  top: 3px;
+  box-shadow:
+    0 3px 0 #996600,
+    0 0 0 8px #000000;
+}
+
+.retro-button:active:not(.disabled) {
+  top: 6px;
+  box-shadow:
+    0 0 0 #996600,
+    0 0 0 8px #000000;
+}
+
+.retro-button.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  filter: grayscale(80%);
+}
+
+.retro-button.back-button {
+  background: #FF0000;
+  color: #FFFFFF;
+  box-shadow:
+    0 6px 0 #990000,
+    0 0 0 8px #000000;
+}
+
+.retro-button.back-button:hover {
+  background: #FF3333;
+  box-shadow:
+    0 3px 0 #990000,
+    0 0 0 8px #000000;
+}
+
+/* Remove extras */
+.keyboard-hints {
+  display: none;
+}
+
+.circus-floor {
+  display: none;
+}
+
+.confetti-container {
+  display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .how-to-play-container {
+    padding: 2rem;
+    width: 90%;
+    max-height: 85vh;
+  }
+
+  .retro-title {
+    font-size: 1rem;
+  }
+
+  .text-line {
+    font-size: 0.65rem;
+  }
+
+  .text-line.small {
+    font-size: 0.58rem;
+  }
+
+  .retro-button {
+    font-size: 0.6rem;
+    padding: 1rem 1.8rem;
+  }
+}

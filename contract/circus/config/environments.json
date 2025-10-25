@@ -1,0 +1,32 @@
+{
+  "devnet": {
+    "network": "devnet",
+    "rpcUrl": "https://api.devnet.solana.com",
+    "programId": "3u9hRUKw79MKPobpfiapPfJuUqWARW4YfEBHbxY14bs1",
+    "admin": "6LMkcE3itY24bmVFQksNmhiekaJBFBShPFZkroLFQcsg",
+    "validator": "VALIDATOR_PUBKEY_PLACEHOLDER",
+    "prizeSeedAmount": 0.1,
+    "initialRoundId": 1,
+    "testMode": true
+  },
+  "mainnet": {
+    "network": "mainnet-beta",
+    "rpcUrl": "https://api.mainnet-beta.solana.com",
+    "programId": "MAINNET_PROGRAM_ID_PLACEHOLDER",
+    "admin": "MAINNET_ADMIN_PUBKEY_PLACEHOLDER",
+    "validator": "MAINNET_VALIDATOR_PUBKEY_PLACEHOLDER",
+    "prizeSeedAmount": 10,
+    "initialRoundId": 1,
+    "testMode": false
+  },
+  "localnet": {
+    "network": "localnet",
+    "rpcUrl": "http://127.0.0.1:8899",
+    "programId": "3u9hRUKw79MKPobpfiapPfJuUqWARW4YfEBHbxY14bs1",
+    "admin": "LOCAL_ADMIN_PUBKEY",
+    "validator": "LOCAL_VALIDATOR_PUBKEY",
+    "prizeSeedAmount": 1,
+    "initialRoundId": 1,
+    "testMode": true
+  }
+}

@@ -1,0 +1,84 @@
+/**
+ * Global Styles - Circus Finance (Arcade Edition)
+ * Retro 8-bit reset and base styles
+ */
+
+/* Modern CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* Disable font smoothing for pixel-perfect rendering */
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: #000033;
+  color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Disable default button styles */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image defaults - pixelated for retro look */
+img {
+  max-width: 100%;
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Retro arcade scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  background: #000000;
+}
+
+::-webkit-scrollbar-track {
+  background: #000033;
+  border: 2px solid #0066FF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFFF00;
+  border: 2px solid #FF0000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF0000;
+  border: 2px solid #FFFF00;
+}
